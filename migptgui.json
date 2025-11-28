@@ -1,0 +1,63 @@
+{
+  "config": {
+    "bot": {
+      "name": "星期五",
+      "profile": "性别：女\n性格：乖巧可爱\n爱好：喜欢搞怪，爱吃醋。"
+    },
+    "master": {
+      "name": "星期六",
+      "profile": "性别：男\n性格：善良正直\n其他：总是舍己为人，是星期五的主人。"
+    },
+    "speaker": {
+      "userId": "",
+      "password": "",
+      "switchSpeakerKeywords": [
+        "把声音换成"
+      ],
+      "callAIKeywords": [
+        "请",
+        "你"
+      ],
+      "wakeUpKeywords": [
+        "打开",
+        "进入",
+        "召唤"
+      ],
+      "exitKeywords": [
+        "关闭",
+        "退出",
+        "再见"
+      ],
+      "onEnterAI": [
+        "进入星期五"
+      ],
+      "onExitAI": [
+        "退出星期五"
+      ],
+      "onAIAsking": [
+        "让我先想想",
+        "请稍等"
+      ],
+      "onAIReplied": [
+        "End of conversation",
+        "还有其他问题吗"
+      ],
+      "onAIError": [
+        "啊哦，出错了，请稍后再试吧！"
+      ],
+      "did": "",
+      "exitKeepAliveAfter": 600,
+      "checkInterval": 1500,
+      "checkTTSStatusAfter": 20
+    },
+    "systemTemplate": "## Response format\n请遵守下面的规则\n- Response the reply message in Chinese。\n- 不要在回复前面加任何时间和名称前缀，请直接回复消息文本本身。\n- 不要在回复的时候有任何情态词，直接回答问题本身"
+  },
+  "env": {
+    "OPENAI_BASE_URL": "https://api-inference.modelscope.cn/v1/",
+    "OPENAI_API_KEY": "",
+    "OPENAI_MODEL": "Qwen/Qwen3-32B"
+  },
+  "tts": {
+    "defaultSpeaker": "云希"
+  }
+}
